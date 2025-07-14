@@ -40,22 +40,22 @@ export default function SubscriptionsDisplay(props) {
                                     <p>Due</p>
                                     <h4>{getDaysUntilNextCharge(startDate, billingFrequency)}</h4>
                                 </div>
-                                <div className="white-line" />
-                                <p>{notes}</p>
-                                <div className="subscription-actions">
-                                    <button onClick={() => {
-                                        handleEditSubscription(subIndex)
-                                    }} className="button-card">
-                                        <i className="fa-solid fa-pen-to-square"></i>
-                                        Edit
-                                    </button>
-                                    <button onClick={() => {
-                                        handleDeleteSubscription(subIndex)
-                                    }} className="button-card">
-                                        <i className="fa-solid fa-trash"></i>
-                                        Delete
-                                    </button>
-                                </div>
+                            </div>
+                            <div className="white-line" />
+                            <p>{notes}</p>
+                            <div className="subscription-actions">
+                                <button onClick={() => {
+                                    handleEditSubscription(subIndex)
+                                }} className="button-card">
+                                    <i className="fa-solid fa-pen-to-square"></i>
+                                    Edit
+                                </button>
+                                <button onClick={() => {
+                                    handleDeleteSubscription(subIndex)
+                                }} className="button-card">
+                                    <i className="fa-solid fa-trash"></i>
+                                    Delete
+                                </button>
                             </div>
                         </div>
                     )
